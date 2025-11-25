@@ -1,0 +1,38 @@
+# Python
+# Virtual environment (uv typically uses .venv by default)
+.venv/
+venv/
+env/
+ENV/
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Distribution / packaging
+.Python
+build/
+dist/
+wheels/
+*.egg-info/
+*.whl
+
+# Environment files
+.env
+.flaskenv
+
+# Editors/IDE-specific files
+.vscode/        # VS Code
+.idea/          # PyCharm/IntelliJ
+*.swp           # Vim
+
+# Other temporary files
+*.tmp
+*.log
+*.sqlite
+.coverage
+
+# OS-specific files
+.DS_Store       # macOS
+Thumbs.db       # Windows
+
