@@ -1,4 +1,6 @@
 # Python
+# App specific ignores
+data/
 # Virtual environment (uv typically uses .venv by default)
 .venv/
 venv/

@@ -1,7 +1,13 @@
+#!/usr/bin/env python3
+"""
+Convert a structured Markdown file to a JSON array of objects. Each object corresponds
+to a section in the Markdown file, with 'title' and 'content' fields. Sections are
+defined by level 2 headers (##).
+"""
 import argparse
 import json
 import re
-from typing import List, Dict, Any
+from typing import (List, Dict, Any,)
 
 def read_file(filepath: str) -> str:
     """Reads the content of a file."""
@@ -9,7 +15,7 @@ def read_file(filepath: str) -> str:
         with open(filepath, 'r', encoding='utf-8') as f:
             return f.read()
     except FileNotFoundError:
-        raise FileNotFoundError(f"Error: The file '{filepath}' was not found.")
+        raise FileNotFoundErro (f"Error: The file '{filepath}' was not found.")
     except Exception as e:
         raise IOError(f"Error reading file '{filepath}': {e}")
 
@@ -118,3 +124,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
